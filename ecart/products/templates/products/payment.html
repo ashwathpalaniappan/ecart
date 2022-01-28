@@ -1,0 +1,14 @@
+{% extends "products/base.html" %}
+{% block content %}
+{% load static %}
+<br><br><br><br><br>
+<center>
+<img class="res-img" src="{% static 'products/images/payment.png' %}">
+<form action="payment"  method="post">
+    {% csrf_token %}
+    <input class="general-btn" type="submit" value="Make Payment">
+</form>
+</center>
+<br><br><br><br><br>
+
+{% endblock content %}

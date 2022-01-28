@@ -1,0 +1,10 @@
+{% extends "products/base.html" %}
+{% block content %}
+<br><br><br><br><br><br><br>
+    <form action="about"  method="post">
+        {% csrf_token %}
+        <input type="text" name="email"><br>
+        <input type="text" name="password"><br>
+        <input type="submit" value="Register">
+    </form>
+{% endblock content %}
